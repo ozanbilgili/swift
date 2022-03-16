@@ -2,6 +2,7 @@
 // RUN: %target-build-swift -module-name main -Xfrontend -enable-experimental-distributed -Xfrontend -disable-availability-checking -j2 -parse-as-library -I %t %s -o %t/a.out
 // RUN: %target-run %t/a.out | %FileCheck %s --color
 
+// REQUIRES: foobarasdfasdf
 // REQUIRES: executable_test
 // REQUIRES: concurrency
 // REQUIRES: distributed
