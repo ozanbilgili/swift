@@ -1602,7 +1602,8 @@ namespace decls_block {
 
   using AnyPatternLayout = BCRecordLayout<
     ANY_PATTERN,
-    TypeIDField  // type
+    TypeIDField, // type
+    BCFixed<1>   // isAsyncLet
     // FIXME: is the type necessary?
   >;
 
